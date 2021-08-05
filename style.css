@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+  font-family: 'Raleway', sans-serif;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  background-color: #253137;
+}
+
+.flex-container a{
+  color: white;
+  text-decoration: none;
+}
+
+.flex-container i{
+  font-size: 125%;
+}
+
+.flex-container > div{
+  height: 40px;
+  flex-grow: 1;
+  text-align: center;
+  line-height: 40px;
+}
