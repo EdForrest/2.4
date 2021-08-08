@@ -4,12 +4,14 @@
   font-family: 'Raleway', sans-serif;
   padding: 0;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .flex-container{
+  padding-left: 25%;
+  padding-right: 25%;
   display: flex;
-  flex-direction: row;
-  flex-grow: 1;
+  justify-content: center;
   background-color: #253137;
 }
 
@@ -19,12 +21,36 @@
 }
 
 .flex-container i{
-  font-size: 125%;
+  padding-top: 30%;
+  font-size: 135%;
 }
 
 .flex-container > div{
-  height: 40px;
-  flex-grow: 1;
+  height: 5vh;
   text-align: center;
-  line-height: 40px;
+  line-height: 5vh;
+}
+
+.logo{
+  overflow-y: hidden;
+}
+
+.wide-container > div{
+  width: 100%;
+  height: 80vh;
+  padding-bottom: 2%;
+  background-position: center;
+  background-size: cover;
+}
+
+.wide-1{
+  background: url("img/btc-3.png");
+}
+
+.wide-2{
+  background: url("img/eth-1.png");
+}
+
+.wide-3{
+  background: url("img/wallet-2.png");
 }
