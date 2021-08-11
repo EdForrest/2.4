@@ -12,6 +12,7 @@
   padding-right: 25%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   background-color: #253137;
 }
 
@@ -48,9 +49,14 @@
 }
 
 .wide-2{
-  background: url("img/eth-1.png");
+  background: url("img/eth-4.png");
 }
 
 .wide-3{
-  background: url("img/wallet-2.png");
+  background: url("img/wallet-3.png");
+}
+
+footer{
+  background-color: #253137;
+  height: 30vh;
 }
