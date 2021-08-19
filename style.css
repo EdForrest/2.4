@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+:root {
+  --main-bg-colour: #253137;
+  --main-txt-colour: #FFFFFF;
+  --sec-txt-colour: #0067A5;
+  --thrd-txt-colour: #0ABAB5;
+}
+
 *{
   font-family: 'Raleway', sans-serif;
   padding: 0;
@@ -13,7 +20,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: #253137;
+  background-color: var(--main-bg-colour);
 }
 
 .flex-container a{
@@ -49,14 +56,38 @@
 }
 
 .wide-2{
-  background: url("img/eth-4.png");
+  background: url("img/eth-4.5.png");
 }
 
 .wide-3{
   background: url("img/wallet-3.png");
 }
 
+.wide-text{
+  text-align: center;
+  padding-top: 60vh;
+  color: var(--main-txt-colour);
+}
+
+.wide-text > a{
+  font-size: 15px;
+  text-decoration: none;
+  color: var(--main-txt-colour);
+}
+
 footer{
   background-color: #253137;
   height: 30vh;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  padding-top: 2vh;
+}
+
+.fbox{
+  vertical-align: middle;
+  flex: 1;
+  color: white;
 }
