@@ -91,3 +91,18 @@ footer{
   flex: 1;
   color: white;
 }
+
+.spread-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  width: 80vw;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.spread-container > img{
+  max-width: 100%;
+  height: auto;
+}
