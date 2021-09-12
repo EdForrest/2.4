@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-
 :root {
   --main-bg-colour: #253137;
   --main-txt-colour: #FFFFFF;
@@ -52,15 +51,15 @@
 }
 
 .wide-1{
-  background: url("img/btc-3.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("img/btc-3.png");
 }
 
 .wide-2{
-  background: url("img/eth-4.5.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("img/eth-4.5.png");
 }
 
 .wide-3{
-  background: url("img/wallet-3.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img/wallet-3.png");
 }
 
 .wide-text{
@@ -82,7 +81,7 @@
 
 footer{
   background-color: #253137;
-  height: 30vh;
+  height: 25vh;
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -91,14 +90,18 @@ footer{
   padding-top: 2vh;
 }
 
-footer > p{
-
-}
-
 .fbox{
-  vertical-align: middle;
+  padding-top: 3vh;
   flex: 1;
   color: white;
+}
+
+.fbox > p{
+  padding-top: 1vh;
+}
+
+.fbox > h1{
+  font-size: 20px;
 }
 
 .heading{
