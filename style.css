@@ -39,6 +39,7 @@
 }
 
 .logo{
+  padding-top: 1.5px;
   overflow-y: hidden;
 }
 
@@ -51,15 +52,15 @@
 }
 
 .wide-1{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("img/btc-3.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("img/btc-3.png");
 }
 
 .wide-2{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("img/eth-4.5.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("img/eth-4.5.png");
 }
 
 .wide-3{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img/wallet-3.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("img/wallet-3.png");
 }
 
 .wide-text{
@@ -105,7 +106,7 @@ footer{
 }
 
 .heading{
-  font-size: 36px;
+  font-size: 30px;
   text-align: center;
   padding-top: 4vh;
 }
@@ -115,7 +116,7 @@ footer{
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 2rem;
-  width: 80vw;
+  width: 70vw;
   padding-top: 5vh;
   padding-bottom: 5vh;
 }
@@ -124,6 +125,18 @@ footer{
   max-width: 100%;
   height: auto;
   max-height: 50vh;
+  vertical-align: middle;
+}
+
+.spread-container > p{
+  border-style: solid;
+  border-width: 2px;
+  padding: 10px;
+  border-color: var(--main-bg-colour);
+}
+
+.spread-container > p > b{
+  font-size: 20px;
 }
 
 .about-container{
@@ -132,7 +145,7 @@ footer{
 
 .about-title{
   text-align: center;
-  background: url(img/stock-1.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/stock-1.png);
   background-position: center;
   background-size: cover;
   height: 20vh;
@@ -145,13 +158,6 @@ footer{
 
 .about-title > h1{
   z-index: 1;
-}
-
-.img-overlay{
-  background-color: rgba(0,0,0,0.6);
-  width: 100%;
-  height: 100%;
-  position: absolute;
 }
 
 .paragraph{
@@ -175,15 +181,15 @@ footer{
 }
 
 .sec-btc{
-  background: url(img/btc-5.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/btc-5.png);
 }
 
 .sec-altcoins{
-  background: url(img/altcoin-3.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/altcoin-3.png);
 }
 
 .sec-wallets{
-  background: url(img/wallet-4.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/wallet-4.png);
 }
 
 .sec-btc, .sec-altcoins, .sec-wallets{
@@ -202,4 +208,9 @@ footer{
   z-index: 1;
   text-decoration: none;
   color: var(--main-txt-colour);
+}
+
+.drop-shadow{
+  box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.6), -12px 0 8px -4px rgba(0, 0, 0, 0.6);
+  width: 75vw;
 }
