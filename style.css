@@ -1,3 +1,5 @@
+/* CSS for all pages */
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 :root {
   --main-bg-colour: #253137;
@@ -12,6 +14,8 @@
   margin: 0 auto;
   overflow-x: hidden;
 }
+
+/* CSS for nav-bar */
 
 .flex-container{
   padding-left: 25%;
@@ -52,6 +56,8 @@
   padding-top: 1.5px;
   overflow-y: hidden;
 }
+
+/* CSS for index page */
 
 .wide-container > div{
   width: 100%;
@@ -94,6 +100,8 @@
   color: var(--main-txt-colour);
 }
 
+/* CSS for footer */
+
 footer{
   background-color: #253137;
   height: 25vh;
@@ -125,6 +133,8 @@ footer{
 .fbox > h1{
   font-size: 20px;
 }
+
+/* CSS for infomation pages */
 
 .heading{
   font-size: 30px;
@@ -167,6 +177,8 @@ footer{
 .image-background{
   background-image: url(img/stock-4.5.png);
 }
+
+/* CSS for about page */
 
 .about-container{
   width: 100vw;
@@ -249,9 +261,14 @@ footer{
   width: 75vw;
 }
 
+/* CSS for to help in media queries */
+
 .spacer{
   display: none;
 }
+
+
+/* CSS for media queries */
 
 @media (max-width: 1000px) {
   .paragraph > p{
