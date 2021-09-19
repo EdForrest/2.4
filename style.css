@@ -297,7 +297,7 @@ footer{
   .section-container{
     display: block;
   }
-  .sec-btc, .sec-altcoins, .sec-wallets{
+  .sec-btc > a, .sec-altcoins > a, .sec-wallets > a{
     width: 50vw;
   }
   .spread-container > img{
