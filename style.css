@@ -3,7 +3,7 @@
   --main-bg-colour: #253137;
   --main-txt-colour: #FFFFFF;
   --sec-txt-colour: #0067A5;
-  --thrd-txt-colour: #0ABAB5;
+  --thrd-txt-colour: #d9d9d9;
 }
 
 *{
@@ -23,12 +23,22 @@
 }
 
 .flex-container a{
-  color: white;
+  display: inline-block;
+  color: var(--thrd-txt-colour);
   text-decoration: none;
 }
 
+.flex-container a:hover{
+  color: var(--main-txt-colour);
+}
+
+.bitcoin, .altcoins, .wallets, .about{
+  padding-top: 1px;
+  overflow-y: hidden;
+}
+
 .flex-container i{
-  padding-top: 30%;
+  padding-top: 27%;
   font-size: 135%;
 }
 
@@ -49,6 +59,10 @@
   padding-bottom: 2%;
   background-position: center;
   background-size: cover;
+}
+
+.wide-container a:hover{
+  text-decoration: underline;
 }
 
 .wide-1{
@@ -97,8 +111,15 @@ footer{
   color: white;
 }
 
-.fbox > p{
+.fbox > a{
+  display:inline-block;
   padding-top: 1vh;
+  text-decoration: none;
+  color: var(--main-txt-colour);
+}
+
+.fbox > a:hover{
+  text-decoration: underline;
 }
 
 .fbox > h1{
@@ -139,6 +160,14 @@ footer{
   font-size: 20px;
 }
 
+.drop-shadow{
+  background-color: var(--main-txt-colour);
+}
+
+.image-background{
+  background-image: url(img/stock-4.5.png);
+}
+
 .about-container{
   width: 100vw;
 }
@@ -158,6 +187,7 @@ footer{
 
 .about-title > h1{
   z-index: 1;
+  font-size: 50px;
 }
 
 .paragraph{
@@ -180,19 +210,19 @@ footer{
   width: 85vw;
 }
 
-.sec-btc{
+.sec-btc > a{
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/btc-5.png);
 }
 
-.sec-altcoins{
+.sec-altcoins > a{
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/altcoin-3.png);
 }
 
-.sec-wallets{
+.sec-wallets > a{
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/wallet-4.png);
 }
 
-.sec-btc, .sec-altcoins, .sec-wallets{
+.sec-btc > a, .sec-altcoins > a, .sec-wallets > a{
   width: 25vw;
   height: 30vh;
   background-position: center;
@@ -210,7 +240,61 @@ footer{
   color: var(--main-txt-colour);
 }
 
+.sec-btc:hover, .sec-altcoins:hover, .sec-wallets:hover{
+  text-decoration: underline;
+}
+
 .drop-shadow{
   box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.6), -12px 0 8px -4px rgba(0, 0, 0, 0.6);
   width: 75vw;
+}
+
+.spacer{
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .paragraph > p{
+    font-size: 18px;
+    width: 60vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .flex-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .spread-container{
+    display: block;
+  }
+  .spacer{
+    margin-bottom: 30px;
+    display: block;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    height: 65vh;
+  }
+  .section-container{
+    display: block;
+  }
+  .sec-btc, .sec-altcoins, .sec-wallets{
+    width: 50vw;
+  }
+  .spread-container > img{
+    width: 100%;
+  }
+  .paragraph > p{
+    font-size: 17px;
+    width: 70vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .paragraph > p{
+    font-size: 15px;
+    width: 70vw;
+  }
 }
